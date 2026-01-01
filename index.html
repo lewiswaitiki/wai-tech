@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wai-Tech Systems</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="wai-tech-logo.png" alt="Wai-Tech Systems Logo" />
+        <span>Wai-Tech Systems</span>
+        <div class="menu-toggle">☰</div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero" id="home">
+      <h1>Welcome to Wai-Tech Systems</h1>
+      <p>Building scalable, modern platforms for visionary clients.</p>
+      <a href="#services" class="cta-button">Explore services</a>
+    </section>
+
+    <section class="services fade-in hidden" id="services">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>
+            Scalable, modern platforms built with Django, Flask, and WordPress.
+          </p>
+        </div>
+        <div class="card">
+          <h3>UI/UX Design</h3>
+          <p>
+            Immersive, responsive layouts with smooth transitions and
+            animations.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Consulting</h3>
+          <p>
+            Strategic system design, workflow optimization, and client support.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing fade-in hidden" id="pricing">
+      <h2>Pricing Plans</h2>
+      <div class="pricing-cards">
+        <div class="price-card slide-left hidden">
+          <h3>Starter</h3>
+          <p class="price">KES 20,000</p>
+          <ul>
+            <li>Basic website setup</li>
+            <li>Responsive design</li>
+            <li>Email support</li>
+          </ul>
+          <a href="#" class="cta-button">Choose Plan</a>
+        </div>
+        <div class="price-card zoom-in hidden">
+          <h3>Professional</h3>
+          <p class="price">KES 50,000</p>
+          <ul>
+            <li>Custom web development</li>
+            <li>Advanced UI/UX</li>
+            <li>Priority support</li>
+          </ul>
+          <a href="#" class="cta-button">Choose Plan</a>
+        </div>
+        <div class="price-card slide-right hidden">
+          <h3>Enterprise</h3>
+          <p class="price">KES 100,000+</p>
+          <ul>
+            <li>Full-stack solutions</li>
+            <li>Consulting & maintenance</li>
+            <li>Dedicated support</li>
+          </ul>
+          <a href="#" class="cta-button">Choose Plan</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio fade-in hidden" id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <h3>Project 1</h3>
+          <p>Details about Project 1.</p>
+        </div>
+        <div class="portfolio-item">
+          <h3>Project 2</h3>
+          <p>client</p>
+          <p>Details about Project 2.</p>
+        </div>
+        <div class="portfolio-item">
+          <h3>Project 3</h3>
+          <p>client</p>
+          <p>Details about Project 3.</p>
+        </div>
+        <div class="portfolio-item">
+          <h3>Project 4</h3>
+          <p>client</p>
+          <p>Details about Project 4.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact fade-in hidden" id="contact">
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
+    </section>
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="footer-content">
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <hr />
+        <p>&copy; 2026 Wai-Tech Systems. All rights reserved.</p>
+      </div>
+    </footer>
+    <button id="scrollTopBtn">↑</button>
+    <script src="app.js"></script>
+  </body>
+</html>
