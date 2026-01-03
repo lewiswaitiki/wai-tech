@@ -7,6 +7,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #0d0d0d;
     color: #ffffff;
+
 }
 
 * {
@@ -404,6 +405,17 @@ h1:after {
     border-radius: 8px;
     border: 1px dashed #ddd;
 }
+
+ .service-tag {
+     display: inline-block;
+     background-color:#2980b9;
+     color: #fff;
+     padding: 5px 12px;
+     border-radius: 20px;
+     font-size: 0.85rem;
+     font-weight: 600;
+     margin-top: 10px;
+ }
 
 /* contact */
 .contact {
