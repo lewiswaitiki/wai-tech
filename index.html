@@ -1,119 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wai-Tech Systems</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="wai-tech-logo.png" alt="Wai-Tech Systems Logo" />
-        <span>Wai-Tech Systems</span>
-        <div class="menu-toggle">☰</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wai-Tech Systems</title>
+   <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="wai-tech-logo.png" alt="Wai-Tech Systems Logo" />
+      <span>Wai-Tech Systems</span>
+      <div class="menu-toggle">☰</div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="home">
+    <h1>Welcome to Wai-Tech Systems</h1>
+    <p>Building scalable, modern platforms for visionary clients.</p>
+    <a href="#services" class="cta-button">Explore services</a>
+  </section>
+
+  <section class="services fade-in hidden" id="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>
+          Scalable, modern platforms built with Django, Flask, and WordPress.
+        </p>
       </div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+      <div class="card">
+        <h3>UI/UX Design</h3>
+        <p>
+          Immersive, responsive layouts with smooth transitions and
+          animations.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Consulting</h3>
+        <p>
+          Strategic system design, workflow optimization, and client support.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <section class="hero" id="home">
-      <h1>Welcome to Wai-Tech Systems</h1>
-      <p>Building scalable, modern platforms for visionary clients.</p>
-      <a href="#services" class="cta-button">Explore services</a>
-    </section>
+  <section class="pricing fade-in hidden" id="pricing">
+    <h2>Pricing Plans</h2>
+    <div class="pricing-cards">
+      <div class="price-card slide-left hidden">
+        <h3>Starter</h3>
+        <p class="price">KES 20,000</p>
+        <ul>
+          <li>Basic website setup</li>
+          <li>Responsive design</li>
+          <li>Email support</li>
+        </ul>
+        <a href="#" class="cta-button">Choose Plan</a>
+      </div>
+      <div class="price-card zoom-in hidden">
+        <h3>Professional</h3>
+        <p class="price">KES 50,000</p>
+        <ul>
+          <li>Custom web development</li>
+          <li>Advanced UI/UX</li>
+          <li>Priority support</li>
+        </ul>
+        <a href="#" class="cta-button">Choose Plan</a>
+      </div>
+      <div class="price-card slide-right hidden">
+        <h3>Enterprise</h3>
+        <p class="price">KES 100,000+</p>
+        <ul>
+          <li>Full-stack solutions</li>
+          <li>Consulting & maintenance</li>
+          <li>Dedicated support</li>
+        </ul>
+        <a href="#" class="cta-button">Choose Plan</a>
+      </div>
+    </div>
+  </section>
 
-    <section class="services fade-in hidden" id="services">
-      <h2>Our Services</h2>
-      <div class="service-cards">
-        <div class="card">
-          <h3>Web Development</h3>
-          <p>
-            Scalable, modern platforms built with Django, Flask, and WordPress.
+  <!-- Portfolio Section -->
+  <section class="portfolio fade-in hidden" id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <h3>Project 1</h3>
+        <p>Details about Project 1.</p>
+      </div>
+      <div class="portfolio-item">
+        <h3>Project 2</h3>
+        <p>client</p>
+        <p>Details about Project 2.</p>
+      </div>
+      <div class="portfolio-item">
+        <h3>Project 3</h3>
+        <p>client</p>
+        <p>Details about Project 3.</p>
+      </div>
+      <div class="portfolio-item">
+        <h3>Project 4</h3>
+        <p>client</p>
+        <p>Details about Project 4.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+    <section class="testimonials fade-in hidden" id="testimonials">
+      <div class="review-container">
+        <header>
+          <h1>Client's Reviews</h1>
+          <p class="subtitle">
+            See what our clients have to say about our services. We take pride in
+            delivering exceptional customer experiences and building lasting
+            relationships.
           </p>
-        </div>
-        <div class="card">
-          <h3>UI/UX Design</h3>
-          <p>
-            Immersive, responsive layouts with smooth transitions and
-            animations.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Consulting</h3>
-          <p>
-            Strategic system design, workflow optimization, and client support.
-          </p>
-        </div>
-      </div>
-    </section>
+        </header>
+        <div class="testimonials-grid">
+          <!-- Liz Hing Review -->
+          <div class="card">
+            <div class="card-header">
+              <div class="client-avatar">MN</div>
+              <div class="client-info">
+                <h3> Munene</h3>
+                <p>Retail Business Owner</p>
+                <span class="service-tag">POS development</span>
+              </div>
+            </div>
 
-    <section class="pricing fade-in hidden" id="pricing">
-      <h2>Pricing Plans</h2>
-      <div class="pricing-cards">
-        <div class="price-card slide-left hidden">
-          <h3>Starter</h3>
-          <p class="price">KES 20,000</p>
-          <ul>
-            <li>Basic website setup</li>
-            <li>Responsive design</li>
-            <li>Email support</li>
-          </ul>
-          <a href="#" class="cta-button">Choose Plan</a>
-        </div>
-        <div class="price-card zoom-in hidden">
-          <h3>Professional</h3>
-          <p class="price">KES 50,000</p>
-          <ul>
-            <li>Custom web development</li>
-            <li>Advanced UI/UX</li>
-            <li>Priority support</li>
-          </ul>
-          <a href="#" class="cta-button">Choose Plan</a>
-        </div>
-        <div class="price-card slide-right hidden">
-          <h3>Enterprise</h3>
-          <p class="price">KES 100,000+</p>
-          <ul>
-            <li>Full-stack solutions</li>
-            <li>Consulting & maintenance</li>
-            <li>Dedicated support</li>
-          </ul>
-          <a href="#" class="cta-button">Choose Plan</a>
-        </div>
-      </div>
-    </section>
+            <div class="review-content">
+              <div class="review-highlight">
+                “Wai-Tech built a custom POS that transformed how we manage inventory and track sales.”
+              </div>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio fade-in hidden" id="portfolio">
-      <h2>Portfolio</h2>
-      <div class="portfolio-grid">
-        <div class="portfolio-item">
-          <h3>Project 1</h3>
-          <p>Details about Project 1.</p>
+              <p>
+                 Lewis was incredibly responsive and understood our business needs from day one. The system is fast, intuitive, and has saved us hours every week. Highly recommend!😊
+              </p>
+
+              <p>
+                
+              </p>
+            </div>
+
+            <div class="review-footer">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="date">October 2, 2025</div>
+            </div>
+          </div>
+
+          <!--  Review (Empty) -->
+          <div class="testimonial-card">
+            <div class="card-header">
+              <div class="client-avatar">KC</div>
+              <div class="client-info">
+                <h3>Customer</h3>
+                <p>Return Customer</p>
+                <span class="service-tag">Web development Services</span>
+              </div>
+            </div>
+
+            <div class="review-content">
+              <div class="empty-review">
+                <i class="far fa-comment-alt" style="font-size: 2rem; margin-bottom: 10px; display: block"></i>
+                Review coming soon...
+              </div>
+            </div>
+
+            <div class="review-footer">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="date">Review pending</div>
+            </div>
+          </div>
         </div>
-        <div class="portfolio-item">
-          <h3>Project 2</h3>
-          <p>client</p>
-          <p>Details about Project 2.</p>
-        </div>
-        <div class="portfolio-item">
-          <h3>Project 3</h3>
-          <p>client</p>
-          <p>Details about Project 3.</p>
-        </div>
-        <div class="portfolio-item">
-          <h3>Project 4</h3>
-          <p>client</p>
-          <p>Details about Project 4.</p>
-        </div>
-      </div>
     </section>
 
     <section class="contact fade-in hidden" id="contact">
@@ -121,33 +208,15 @@
       <form class="contact-form">
         <div class="form-group">
           <label for="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your Name"
-            required
-          />
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
         </div>
         <div class="form-group">
           <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your Email"
-            required
-          />
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
         </div>
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            placeholder="Your Message"
-            required
-          ></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
         </div>
         <button type="submit" class="cta-button">Send Message</button>
       </form>
@@ -166,5 +235,6 @@
     </footer>
     <button id="scrollTopBtn">↑</button>
     <script src="app.js"></script>
-  </body>
+</body>
+
 </html>

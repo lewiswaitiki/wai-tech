@@ -8,9 +8,11 @@ body {
     background-color: #0d0d0d;
     color: #ffffff;
 }
-*{
+
+* {
     box-sizing: border-box;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -55,7 +57,7 @@ body {
     color: #4da6ff;
 }
 
-.menu-toggle{
+.menu-toggle {
     display: none;
 }
 
@@ -82,7 +84,7 @@ body {
 }
 
 .hero {
-    margin-top:80px;
+    margin-top: 80px;
     text-align: center;
     padding: 4rem 2rem;
     background: linear-gradient(to right, #1a1a1a, #0d0d0d);
@@ -147,7 +149,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 350px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
- 
+
 }
 
 .card:hover {
@@ -160,7 +162,7 @@ body {
     padding: 4rem 2rem;
     text-align: center;
     background-color: #1a1a1a;
-    border-top:solid 1px #222;
+    border-top: solid 1px #222;
 }
 
 .pricing h2 {
@@ -238,6 +240,169 @@ body {
 
 .portfolio-item:hover {
     transform: scale(1.05);
+}
+
+
+/* testimonials */
+.testimonials {
+    padding: 4rem 2rem;
+    background-color: #0d0d0d;
+    text-align: center;
+    border-top: solid 1px #222;
+}
+
+
+
+.review-container h1 {
+    color: #4da6ff;
+    /* font-size: 2.8rem; */
+    margin-bottom: 10px;
+    /* position: relative; */
+    /* display: inline-block; */
+}
+
+h1:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: #3498db;
+    border-radius: 2px;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.testimonial-card {
+    background: #111;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.client-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #3498db;
+    font-weight: bold;
+    margin-right: 20px;
+    border: 3px solid #e0e7ff;
+}
+
+.client-info h3 {
+    /* color: #2c3e50; */
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.client-info p {
+    color: #7f8c8d;
+    font-size: 0.95rem;
+}
+
+.review-content {
+    /* color: #555; */
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.review-highlight {
+    background-color: #7f8c8d;
+    padding: 15px;
+    border-left: 4px solid #3498db;
+    margin: 15px 0;
+    font-style: italic;
+    border-radius: 0 8px 8px 0;
+}
+
+.review-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed #eee;
+}
+
+.rating {
+    color: #f39c12;
+    font-size: 1.1rem;
+}
+
+.date {
+    color: #95a5a6;
+    font-size: 0.9rem;
+}
+
+.testimonial-card:nth-child(1) .client-avatar {
+    background-color: #ffeaea;
+    color: #e74c3c;
+}
+
+.testimonial-card:nth-child(2) .client-avatar {
+    background-color: #e8f4fc;
+    color: #2980b9;
+}
+
+.testimonial-card:nth-child(3) .client-avatar {
+    background-color: #f0e8ff;
+    color: #9b59b6;
+}
+
+.testimonial-card:nth-child(4) .client-avatar {
+    background-color: #e8f7ef;
+    color: #27ae60;
+}
+
+.empty-review {
+    color: #95a5a6;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px dashed #ddd;
 }
 
 /* contact */
@@ -428,39 +593,48 @@ body {
     background-color: #3399ff;
 }
 
-@media(max-width:768px){
-    .nav-links{
-        display:none;
-        flex-direction:column;
-        background-color:#111;
+@media(max-width:768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #111;
         position: absolute;
-        top:60px;
+        top: 60px;
         right: 0;
-        width:200px;
+        width: 200px;
         padding: 1rem;
     }
 
-    .nav-links.show{
+    .nav-links.show {
         display: flex;
     }
 
-    .menu-toggle{
+    .menu-toggle {
         display: block;
         cursor: pointer;
-        color:#4da6ff;
+        color: #4da6ff;
         position: absolute;
-        right:30px;
+        right: 30px;
     }
 
-    .card{
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
         width: 100%;
     }
 
-    .portfolio-item{
+         .testimonial-card.card {
+             width: 100%;
+             padding: 20px;
+         }
+
+    .portfolio-item {
         width: 100%;
     }
 
-    .price-card{
+    .price-card {
         width: 100%;
     }
 }
