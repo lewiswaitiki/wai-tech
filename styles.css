@@ -840,7 +840,6 @@ h1:after {
     }
 
     .hero{
-        text-align: left;
-        height: auto;
+        padding: 2rem 1rem;
     }
 }
