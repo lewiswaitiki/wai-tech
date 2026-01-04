@@ -147,6 +147,7 @@ body {
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
+    min-height: 300px;
 }
 
 
@@ -836,5 +837,10 @@ h1:after {
 
     .price-card {
         width: 100%;
+    }
+
+    .hero{
+        text-align: left;
+        height: auto;
     }
 }
