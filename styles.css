@@ -841,5 +841,6 @@ h1:after {
 
     .hero{
         padding: 2rem 1rem;
+        height: auto;
     }
 }
